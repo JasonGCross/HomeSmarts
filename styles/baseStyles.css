@@ -1,0 +1,1392 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/********************************************************************************************************/
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption,
+menu, footer, header, nav, section, summary, time, mark, audio, video,
+figure, nav, article, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+
+/********************************************************************************************************/
+/*	Typography presets
+	------------------	*/
+
+h1, h2, h3, h4
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin: 12px 20px 4px 0;
+}
+h1
+{
+	font-size: 180%;
+	font-weight: normal;
+}
+h2
+{
+	font-size: 140%;
+	font-weight: normal;
+}
+h3
+{
+	font-size: 120%;
+	font-weight: normal;
+}
+h4
+{
+	font-size: 110%;
+	font-weight: normal;
+}
+h3 + h1
+{
+	margin-top: 4px;
+	margin-bottom: 12px;
+}
+
+body {
+	font: 16px/24px Myriad, "Myriad Pro", Verdana, Geneva, sans-serif;
+	font-size: 0.8125em;
+}
+
+#topNav, .secondNav, footer, article h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+article h2 {
+	font-size: 160%;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+div#testimonials_aside div.more {
+	font-size: 80%;
+	font-style: italic;
+}
+
+ul
+{
+	list-style-type: none;
+}
+ 
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+q
+{
+	font-style:italic;
+}
+
+q:before, q:after
+{
+	content: '"';
+}
+
+cite
+{
+	font-size: 90%;
+}
+
+
+
+/********************************************************************************************************/
+/** colors **/
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+body {
+	background-color:#000000;
+}
+
+h1, h2, h3, h4, #indoorRidesWork dt
+{
+	color: #ce1d00;
+}
+
+header, footer, a, #topNav a, 
+
+/* begin second nav */
+.secondNav a,
+#studio li.studio a:hover,
+#about-us li.about-us a:hover,
+#register li.register a:hover,
+#bicycling li.bicycling a:hover,
+#fitness li.fitness a:hover,
+#yoga li.yoga a:hover,
+#schedules li.schedules a:hover,
+#contact li.contact a:hover,
+#about-us li.about-us a:hover,
+
+.secondNav ul ul a:before,
+
+#studio .secondNav li.studio:hover ul a,
+#about-us .secondNav li.about-us:hover ul a,
+#register .secondNav li.register:hover ul a,
+#bicycling .secondNav li.bicycling:hover ul a,
+#fitness .secondNav li.fitness:hover ul a,
+#yoga .secondNav li.yoga:hover ul a,
+#schedules .secondNav li.schedules:hover ul a,
+#contact .secondNav li.contact:hover ul a,
+div#testimonials_aside div.more
+/* end econd nav */
+{
+	color: #F2BB16;
+}
+
+.secondNav a
+{
+	border-bottom-color: #F2BB16;
+}
+
+/* begin second nav */
+#studio li.studio a:hover,
+#about-us li.about-us a:hover,
+#register li.register a:hover,
+#bicycling li.bicycling a:hover,
+#fitness li.fitness a:hover,
+#yoga li.yoga a:hover,
+#schedules li.schedules a:hover,
+#contact li.contact a:hover,
+#about-us li.about-us a:hover,
+
+#studio li.studio a,
+#about-us li.about-us a,
+#register li.register a,
+#bicycling li.bicycling a,
+#fitness li.fitness a,
+#yoga li.yoga a,
+#schedules li.schedules a,
+#contact li.contact a,
+#about-us li.about-us a,
+/* end econd nav */
+div.mindbody_classic table.schedule tr th, 
+div.calendar table.schedule tr th.hc_daypart
+{
+	background-color:#F2F2F2;
+}
+
+.secondNav li:hover
+{
+	border-bottom-color: #F2BB16;
+}
+
+dl.partners_widget li.active {
+	background-color: #F2BB16;
+}
+
+#studio .secondNav li.studio:hover ul a,
+#about-us .secondNav li.about-us:hover ul a,
+#register .secondNav li.register:hover ul a,
+#bicycling .secondNav li.bicycling:hover ul a,
+#fitness .secondNav li.fitness:hover ul a,
+#yoga .secondNav li.yoga:hover ul a,
+#schedules .secondNav li.schedules:hover ul a,
+#contact .secondNav li.contact:hover ul a
+{
+	background-color: #ffffff;
+}
+
+
+.secondNav, section, aside, footer, footer nav ul, header, div.healcodeWidget,
+#partners dd, #terms-and-conditions article, #privacy article {
+	background-color:#202020;
+}
+
+#topLine, a:hover {
+	background-color:#ce1d00;
+}
+
+body,
+#topNav a:hover,
+.secondNav a:hover,
+#studio .secondNav li.studio ul a:hover,
+#about-us .secondNav li.about-us ul a:hover,
+#register .secondNav li.register ul a:hover,
+#bicycling .secondNav li.bicycling ul a:hover,
+#fitness .secondNav li.fitness ul a:hover,
+#yoga .secondNav li.yoga ul a:hover,
+#schedules .secondNav li.schedules ul a:hover,
+#contact .secondNav li.contact ul a:hover,
+.secondNav ul ul a:hover:before,
+div.healcode span.hc_time,
+div.healcode span.visit_type
+{
+	color:#ffffff;
+}
+div.healcode.schedule.calendar h1 {
+	color: white !important;
+}
+
+#topNav a:hover,
+.secondNav a:hover,
+#studio .secondNav li.studio ul a:hover,
+#about-us .secondNav li.about-us ul a:hover,
+#register .secondNav li.register ul a:hover,
+#bicycling .secondNav li.bicycling ul a:hover,
+#fitness .secondNav li.fitness ul a:hover,
+#yoga .secondNav li.yoga ul a:hover,
+#schedules .secondNav li.schedules ul a:hover,
+#contact .secondNav li.contact ul a:hover
+{
+	background-color: #B3B3B3;
+}
+
+/********************************************************************************************************/
+/** header, footer **/
+
+header {
+	height: 65px;
+	width: 100%;
+	left: 0;
+	top:3px;
+}
+
+#wrapper {
+	top: 68px;
+}
+
+#topLine {
+	width: 100%;
+	height: 3px;
+	top: 0;
+	left: 0;
+}
+
+header, footer {
+	height: 65px;
+	z-index: 10;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+/*
+ ***********************************************************************************************
+ viewport-size specific layouts
+ */
+
+
+/*		Default Layout (ipads, tablets): 768px.
+		Columns: 8
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+	
+body {
+	position:relative;
+	background-image:url(../media/wet_road.jpg);
+	background-position:0px 230px;
+	background-repeat:repeat-x;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+#wrapper {
+	width: 712px;
+	height: 100%;
+	padding: 0 28px 60px;
+	top: 0;
+}
+footer {
+	padding-left: 28px;
+}
+header a.logo {
+	margin-left: 28px;	
+}
+#topNav {
+	width: 712px;
+	font-size: 0.8em;
+}
+
+/* hero is 6 columns */
+#hero img, article, article iframe, section.second.wide {
+	width: 528px;
+}
+#hero img {
+	height: 352px;
+	clear: both;
+}
+article iframe {
+	height: 528px;
+	overflow:scroll;
+}
+#topNav {
+	font-size: 1em;
+}
+article {
+	height: 100%;
+	float: left;
+}
+/* modules are 3 columns wide */
+section, div.sidebar, section.wide, article .secondNav, div.mapFrame {
+	width: 252px;
+	float: left;
+	margin-top: 24px;
+}
+img.wholeSection {
+	width: 252px;
+}
+img.googleMapNormal {
+	display: none;
+	width: 504px;
+	height: 350px;
+}
+img.googleMapSmall {
+	display: block;
+	width: 252px;
+	height: 350px;
+}
+aside, .sidebar .secondNav {
+	margin-bottom: 24px;
+}
+
+/* layout: 6 columns total ( 2 units)
+ * hero ( 6 columns wide)               |
+ * article.secondNav   | section.first  |
+ * section.second      | section.third  |
+ * sidebar.first       | sidebar.second |
+ */
+article .secondNav, section.second, .sidebar.first {
+	margin-right: 24px;
+}
+section.first, section.third, .sidebar.second, section.second.wide {
+	margin-right: 0;
+}
+
+/* second nav appears in article only */
+article .secondNav {
+	display: block;
+}
+.sidebar .secondNav {
+	display: none;
+}
+
+	
+
+/*		Cinema Display Layout: 1440px. 
+		Columns: 15
+		Gutters: 24px.
+		Outer margins: 42px.
+		Leftover space for scrollbars @1472px: 32px.
+---------------------------------------------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10      11     12     13     14     15    16
+px      68    160    252    344    436    528    620    712    804    896    988   1080   1172   1264   1356  1448  */
+
+@media only screen and (min-width: 1440px) {
+	/* 15 columns */
+	#wrapper {
+		width: 1356px;
+		padding: 0 42px 84px;
+	}
+	footer {
+		padding-left: 42px;
+	}
+	header a.logo {
+		margin-left: 42px;	
+	}
+	
+	/* hero is 9 columns */
+	#hero img, article, article iframe {
+		width: 804px;
+	}
+	#hero img, article iframe {
+		height: 536px;
+	}
+	article iframe {
+		height: 804px;	
+	}
+	#topNav {
+		font-size:1.2em;
+	}
+	
+	/* wide module is 2 units wide */
+	section.wide, div.mapFrame {
+		width: 504px;
+	}
+	img.googleMapNormal {
+		display: block;
+	}
+	img.googleMapSmall {
+		display: none;
+	}
+	
+	/* layout: 15 columns total (5 units)
+	 * hero ( 6 columns wide)                             | .sidebar.first   | .sidebar.second |
+	 * section.first  | section.second   | section.third  | (contains nav)   |                 |
+	 */
+	section.first, section.second {
+		margin-right: 24px;
+	}
+	section.third, .sidebar .secondNav, .sidebar.first, .sidebar.second {
+		margin-right: 0;
+	}
+	
+	/* second nav appears in article only */
+	article .secondNav {
+		display: none;
+	}
+	.sidebar .secondNav {
+		display: block;
+	}
+	/* first sidebar is at column 10 */
+	div.sidebar.first, div.sidebar.second {
+		float: left;
+		margin-left: 24px;
+		margin-top: 34px;
+	}
+	
+}
+
+/*		Widescreen Layout: 1224x. 
+		Columns: 12
+		Gutters: 24px.
+		Outer margins: 42px.
+		Leftover space for scrollbars @1256px: 32px.
+----------------------------------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10      11     12      13     14
+px      68    160    252    344    436    528    620    712    804    896    988   1080    1172   1264  */
+
+@media only screen and (min-width: 1224px) and (max-width: 1439px) {
+	/* 12 columns */
+	#wrapper {
+		width: 1080px;
+		padding: 0 42px 84px;
+	}
+	footer {
+		padding-left: 42px;
+	}
+	header a.logo {
+		margin-left: 42px;	
+	}
+	
+	/* hero is 9 columns */
+	#hero img, article, article iframe {
+		width: 804px;
+	}
+	#hero img {
+		height: 536px;
+	}
+	article iframe {
+		height: 804px;
+	}
+	#topNav {
+		font-size: 1.1em;
+	}
+	/* wide module is 2 units wide */
+	section.wide, div.mapFrame {
+		width: 504px;
+	}
+	img.googleMapNormal {
+		display: block;
+	}
+	img.googleMapSmall {
+		display: none;
+	}
+	
+	/* layout: 12 columns total (4 units)
+	 * hero ( 6 columns wide)                             | .sidebar.first   |
+	 * section.first  | section.second   | section.third  | (contains nav)   |
+	 *                |                  |                | .sidebar.second  |
+	 */
+	section.first, section.second {
+		margin-right: 24px;
+	}
+	section.third, .sidebar .secondNav, .sidebar.first, .sidebar.second {
+		margin-right: 0;
+	}
+	
+	/* second nav appears in article only */
+	article .secondNav {
+		display: none;
+	}
+	.sidebar .secondNav {
+		display: block;
+	}
+	/* first sidebar is at column 10 */
+	div.sidebar.first, div.sidebar.second {
+		float: left;
+		margin-left: 24px;
+		margin-top: 34px;
+	}
+	div.sidebar.second {
+		margin-top: 0;
+	}
+}
+
+/*		Old Desktop Layout: 992x. 
+		Columns: 10
+		Gutters: 24px.
+		Outer margins: 42px.
+		Leftover space for scrollbars @1024px: 32px.
+--------------------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10      11     12 
+px      68    160    252    344    436    528    620    712    804    896    988   1080   */
+
+@media only screen and (min-width: 992px) and (max-width: 1223px) {
+	/* 10 columns */
+	#wrapper {
+		width: 896px;
+		padding: 0 42px 84px;
+	}
+	footer {
+		padding-left: 42px;
+	}
+	header a.logo {
+		margin-left: 42px;	
+	}
+	section.second.wide {
+		width: 252px;
+	}
+	
+	/* layout: 9 columns total ( 3 units)
+	 * hero ( 6 columns wide)
+	 * section.first   | section.second   | .sidebar.first   |
+	 * section.third   |                  | (contains nav)   |
+	 * .sidebar.second |
+	 */
+	section.first, section.third, .sidebar.first, sidebar.second {
+		margin-right: 24px;
+	}
+	section.second, .sidebar .secondNav, .sidebar.second {
+		margin-right: 0;
+	}
+	.sidebar.second {
+		margin-left: 24px;
+	}
+	
+	/* second nav appears in article only */
+	article .secondNav {
+		display: none;
+	}
+	.sidebar .secondNav {
+		display: block;
+	}
+	/* first sidebar is at column 7 */
+	div.sidebar.first {
+		float: left;
+		margin-left: 24px;
+		margin-top: 34px;
+	}
+	div.sidebar.second {
+		margin-top: 0;
+	}
+}
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 479px) {
+	
+	#wrapper {
+		width: 252px;
+		padding: 0 34px 60px;
+	}
+	footer {
+		padding-left: 34px;
+	}
+	header a.logo {
+		margin-left: 34px;	
+	}
+	
+	/* everything is 3 columns */
+	article, section, #hero img, section.wide, iframe, section.second.wide {
+		width: 252px;
+	}
+	#hero img, iframe {
+		height: 168px;
+	}
+	#topNav {
+		display: none;
+	}
+	/* to prevent 2 columns from forming where we only want one, give everything a right margin */
+	section.first, section.second, section.third  {
+		margin-right: 24px;
+	}
+	.sidebar.second {
+		margin-top: 0;
+	}
+	/* fixed doesn't work as expected in mobile Safari */
+	footer {
+		position: relative;
+		clear: both;
+	}
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	#wrapper {
+		width: 436px;
+		padding: 0 22px 48px;
+	}
+	img.googleMapNormal {
+		display: block;
+	}
+	img.googleMapSmall {
+		display: none;
+	}
+	footer {
+		padding-left: 22px;
+	}
+	header a.logo {
+		margin-left: 22px;	
+	}
+	
+	/* everyting is 5 columns */
+	article, #hero img, section, div.sidebar, .secondNav, section.wide, iframe, 
+	article .secondNav, section.second.wide, img.wholeSection, div.mapFrame {
+		width: 436px;
+	}
+	#hero img, iframe {
+		height: 290px;
+	}
+	#topNav {
+		display: none;
+	}
+	.sidebar.second {
+		margin-top: 0;
+	}
+	
+	/* fixed doesn't work as expected in mobile Safari */
+	footer {
+		position: relative;
+		clear: both;
+	}
+}
+
+/**************************************************************************************************************/
+/* General Fit Fx Styles **/
+/**************************************************************************************************************/
+
+cite {
+	display: block;
+	margin-top: 1ex;
+}
+
+cite:before
+{
+	content: '-- ';
+}
+
+.clear {
+	clear: both;
+	width: 254px;
+	height: 1px;
+}
+
+div.spacer {
+	clear: both;
+	height: 100px;
+}
+
+a.logo {
+	display: block;
+}
+
+article div.mapFrame {
+	overflow:hidden;
+	margin-top: 0;
+	height: 350px;
+}
+
+article ol {
+	margin: 8px 8px 8px 2em;
+}
+
+/** main content area and sidebar items **/
+article section h2, article section p, aside p, 
+article h1, article h2, article h3,
+article h4, article h5, article h6,
+article ul.bulleted, article dl,
+article address, div.quoteContainer,
+#terms-and-conditions article p,
+#privacy article p {
+	padding: 8px;
+}
+ul.bulleted {
+	list-style-type: disc;	
+}
+ul.bulleted li {
+	margin: 4px 8px 4px 24px;
+}
+article h3 + ul.bulleted, article h4 + p {
+	padding-top: 0;
+}
+dl.indented dd {
+	padding-left: 1em;
+}
+#yoga dl.indented dt {
+	margin-top: 0.8em;	
+}
+#yoga dl.indented dt.first {
+	margin-top: 0;
+}
+
+section img.thumb {
+	max-height:60px;
+	float: left;
+}
+section div.subheading {
+	margin: 8px;
+}
+section div.subheading h2 {
+	display: table-cell;
+	vertical-align: middle;
+	height: 60px;
+	padding: 0 0 0 8px;
+}
+a.bugLink {
+	color: #0F0;
+	font-size: large;
+	padding: 16px;
+}
+
+
+/************************************* Partners PAGE ***************************************************/
+
+/*---------------------------------------------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10      11     12     13     14     15    16
+px      68    160    252    344    436    528    620    712    804    896    988   1080   1172   1264   1356  1448  */
+
+/* default layout article is 538 */
+/* 528 / 3 = 176 */
+#partners dl {
+	height: 580px;
+}
+#partners dt, #partners dt:hover img, #partners dt img.active {
+	width: 176px;
+	height:250px;
+}
+#partners dt img {
+	width: 59px;
+	height: 83px;
+}
+#partners dd {
+	top: 280px;	
+}
+
+
+/* cinema display, widescreen layout article is 804px
+  804 / 3 = 268px */
+@media only screen and (min-width: 1224px) {
+	#partners dl {
+		height: 650px;
+	}
+	#partners dt, #partners dt:hover img, #partners dt img.active {
+		width: 268px;
+		height: 381px;
+	}
+	#partners dd {
+		top: 411px;	
+	}
+	#partners dt img {
+		width: 89px;
+		height: 120px;
+	}
+}
+
+/* mobile layout article is 252px
+ 252 / 3 = 84px; */
+@media only screen and (max-width: 479px) {
+	#partners dl {
+		height: 690px;
+	}
+	#partners dt, #partners dt:hover img, #partners dt img.active {
+		width: 84px;
+		height: 119px;
+	}
+	#partners dd {
+		top: 139px;	
+	}
+	#partners dt img {
+		width: 28px;
+		height: 40px;
+	}
+}
+
+/* wide mobile devices article is 436px
+ 436 / 3 = 145px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#partners dl {
+		height: 600px;
+	}
+	#partners dt, #partners dt:hover img, #partners dt img.active {
+		width: 145px;
+		height: 206px;
+	}
+	#partners dd {
+		top: 236px;	
+	}
+	#partners dt img {
+		width: 52px;
+		height: 69px;
+	}
+}
+
+#partners dl {
+	position: relative;
+	padding: 0;
+}
+#partners dt {
+	float: left;
+}
+#partners dd {
+	position: absolute;
+	padding: 8px;
+	visibility: hidden;
+}
+#partners dt:hover + dd, #partners dd.active {
+	visibility: visible;	
+}
+#partners dt img {
+	display: block;
+	margin-top: 40%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#partners dt:hover img, #partners dt img.active {
+	margin-top: 0;
+}
+p.partnerHome {
+	background-image: url(../media/small-ico-home.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+p.partnerHome.stephen {
+	background-image: url(../media/stephen_Bike-Gallery-logo-on-window.png);
+}
+.partnerHome a {
+	margin-left: 2em;
+}
+.partnerHome.stephen a, .partherHome.paul a {
+	display: table-cell;
+	vertical-align: middle;
+	height: 60px;
+	padding-left: 98px;
+	margin-left: 0;
+}
+
+/***************************************** primary navigation *****************************************/
+
+#topNav ul  {
+	float: left;
+	list-style-position: inside;
+	list-style-image: none;
+	list-style-type: circle;
+}
+
+#topNav a
+{
+	display: block;
+	padding: 0.6ex 1.8ex;
+}
+
+#topNav li.first-li a {
+	padding-left: 8px;
+}
+
+#topNav ul ul {
+	display: none;
+}
+
+#topNav ul  li {
+	display: inline;
+	float: left;
+}
+
+footer nav ul {
+	font-size: 0.8em;
+	width: 100%;
+}
+
+footer nav ul li {
+	display: inline;
+	float: left;
+}
+span.pipe {
+	margin-left: 3ex;
+	margin-right: 3ex;
+}
+
+header a.logo {
+	float: left;
+	width: 144px;
+	height: 38px;
+	margin-top: 10px;
+	background-image:url(../media/logo_transparent_144x38.png);
+	text-indent: -2000px;
+}
+
+
+/***************************************** Secondary Navigation *****************************************/
+
+/****** FIRST LEVEL ***********/
+
+.secondNav ul
+{
+	padding: 2ex 2ex 1ex 2ex;
+}
+.secondNav a
+{
+	display: block;
+	padding: 0.6ex 0.6ex 0.6ex 1.2ex;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+/*** Both navbars - 1st level ***/
+
+#studio li.studio a:hover,
+#about-us li.about-us a:hover,
+#register li.register a:hover,
+#bicycling li.bicycling a:hover,
+#fitness li.fitness a:hover,
+#yoga li.yoga a:hover,
+#schedules li.schedules a:hover,
+#contact li.contact a:hover,
+#about-us li.about-us a:hover
+{
+	text-decoration:none;
+}
+
+/********* SECOND LEVEL **************/
+
+#studio .secondNav li.studio ul a:hover,
+#about-us .secondNav li.about-us ul a:hover,
+#register .secondNav li.register ul a:hover,
+#bicycling .secondNav li.bicycling ul a:hover,
+#fitness .secondNav li.fitness ul a:hover,
+#yoga .secondNav li.yoga ul a:hover,
+#schedules .secondNav li.schedules ul a:hover,
+#contact .secondNav li.contact ul a:hover
+{
+	text-decoration:underline;
+}
+
+/** Side - 2nd level **/
+.secondNav ul ul
+{
+	top: 0px;
+	left: 170px;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
+	z-index: 100;
+}
+
+.secondNav ul ul li a,
+.secondNav ul ul li:hover
+{
+	border: none;
+}
+
+.secondNav li:hover
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.secondNav ul ul a:before
+{
+	content: '+';
+	padding-right: 4px;
+}
+
+.secondNav ul ul a:hover:before
+{
+	text-decoration:none;
+}
+
+#studio .secondNav li.studio:hover ul a,
+#about-us .secondNav li.about-us:hover ul a,
+#register .secondNav li.register:hover ul a,
+#bicycling .secondNav li.bicycling:hover ul a,
+#fitness .secondNav li.fitness:hover ul a,
+#yoga .secondNav li.yoga:hover ul a,
+#schedules .secondNav li.schedules:hover ul a,
+#contact .secondNav li.contact:hover ul a
+{
+	border:none;
+	padding: 0.6ex 0ex 0.6ex 1.2ex;
+}
+
+#studio .secondNav li.studio ul a:hover,
+#about-us .secondNav li.about-us ul a:hover,
+#register .secondNav li.register ul a:hover,
+#bicycling .secondNav li.bicycling ul a:hover,
+#fitness .secondNav li.fitness ul a:hover,
+#yoga .secondNav li.yoga ul a:hover,
+#schedules .secondNav li.schedules ul a:hover,
+#contact .secondNav li.contact ul a:hover
+{
+	text-decoration:underline;
+}
+
+.secondNav ul li:hover ul
+{
+	display:block;
+}
+
+.secondNav ul ul
+{
+	display: none;
+}
+
+#studio .secondNav li.studio ul,
+#about-us .secondNav li.about-us ul,
+#register .secondNav li.register ul,
+#bicycling .secondNav li.bicycling ul,
+#fitness .secondNav li.fitness ul,
+#yoga .secondNav li.yoga ul,
+#schedules .secondNav li.schedules ul,
+#contact .secondNav li.contact ul
+{
+	display: block;	
+}
+
+.secondNav ul ul a
+{
+	font-size: 100%;
+}
+
+
+/********************************* healcode large modules *********************************/
+
+div.healcodeWidget div.healcode {
+	font-family:Myriad, "Myriad Pro", Verdana, Geneva, sans-serif;
+	font-size: 60%;
+	line-height: 12px;
+}
+div.healcodeWidget div.healcode .hc_class {
+	margin: 2px;
+	padding: 2px;
+}
+div.healcode table.schedule td.hc_day, div.healcode table.enrollments td.hc_day {
+	padding: 1px;
+}
+div.healcode table {
+	border-spacing: 0;
+}
+
+/********************************* daily schedule widget from healcode *********************************/
+#daily_schedule_widget input.signup_now,
+#daily_schedule_widget div.header {
+	display: none;
+} 
+#daily_schedule_widget div.day_view  h1 span.hc_header_day,
+#daily_schedule_widget div.day_view  h1 span.hc_header_year,
+#daily_schedule_widget div.day_view  h1 span.hc_header_month {
+	display: none;
+}
+#daily_schedule_widget div.day_view  h1 span.hc_schedule_for_text:after {
+	content: ' Today';	
+}
+
+/********************************* register link *********************************/
+#registerLink
+{
+	font-size: 200%;
+}
+#hero #registerLink 
+{
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+section.first #registerLink
+{
+	float: right;
+	margin-right: 20px;
+	margin-top: -3ex;
+	margin-bottom: 0;
+}
+#bicycling #registerLink
+{
+	font-size: 250%;
+}
+
+/********************************* indoor rides *********************************/
+#indoorRidesWork dt
+{
+	margin-top: 1ex;
+	margin-bottom: -1ex;
+}
+#indoorRidesWork dt.first
+{
+	margin-top: -2ex;
+}
+
+/********************************* professional coaches MODULE *********************************/
+
+div#partners_aside {
+	position: relative;
+	height: 470px;
+	width: 254px;
+}
+
+div#partners_aside dl.partners_widget {
+	float: left;
+	width: 254px;
+	padding: 0;
+	margin: 0;
+}			
+
+dl.partners_widget dt {
+	display: none;
+}
+
+img.head_shot {
+	width: 234px;
+	margin: 10px;
+}
+
+dl.partners_widget dd.partner_summary {
+	font-size: 85%;
+	margin: 0 10px 10px 10px;
+}
+
+dl.partners_widget dd.partner_summary a {
+	margin-left: 1.2em;	
+}
+
+div#partners_aside ul.controls {
+	font-size: 85%;
+	margin: 0 10px;
+	text-align:center;
+}
+
+
+div#partners_aside ul.controls li a {
+	padding: 4px 12px;	
+}
+
+div#partners_aside ul.controls a.frame {
+	background: none;
+	border: none;
+}
+div#partners_aside ul.controls a.play,
+div#partners_aside ul.controls a.pause
+{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background-position: top left;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	margin: 0 3px 0 3px;
+	padding: 0;
+}
+
+
+
+/************************************ testimonial widget ***************************************/
+
+div#testimonials_aside {
+	position: relative;
+	height: 100%;
+	width: 254px;
+}
+
+div#testimonials_aside h2 {
+	padding: 10px;
+}
+div#testimonials_aside div.testimonials_widget {
+	float: left;
+	width: 234px;
+	padding: 10px;
+	margin: 0;
+}
+
+div#testimonials_aside ul.controls {
+	font-size: 85%;
+	margin: 0 10px;
+	text-align:center;
+	clear: both;
+}
+
+ul.controls li {
+	display: inline;
+}
+
+div#testimonials_aside ul.controls a {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background-position: top left;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	margin: 0 3px 0 3px;
+}
+ul.controls a:hover, ul.controls a:active
+{
+	background-position: bottom left;
+	border: none;
+}
+ul.controls a.controller
+{
+	display: none;
+}
+ul.controls a span
+{
+	display: none;
+}
+ul.controls a.back
+{
+	background-image: url(../media/back.png)
+}
+ul.controls a.forward
+{
+	background-image: url(../media/forward.png)
+}
+ul.controls a.pause
+{
+	background-image: url(../media/pause.png)
+}
+ul.controls a.play
+{
+	background-image: url(../media/play.png)
+}
+div#testimonials_aside ul.controls a.frame
+{
+	background-color: #FFFFFF;
+	border: 1px solid #B81237;
+}
+div#testimonials_aside ul.controls a.frame {
+	width: 8px;
+}
+div#testimonials_aside ul.controls a.frame:hover, 
+div#testimonials_aside ul.controls a.frame:active
+{
+	background-color: #D0D0D0;
+}
+div#testimonials_aside .collapsed q {
+	height: 16em;
+	overflow: hidden;
+	display: block;
+}
+div#testimonials_aside .expanded q {
+	height: 100%;
+}
+div#testimonials_aside div.more {
+	width: 100%;
+	text-align: right;
+	cursor: pointer;
+	color: #F90
+}
+
+
+/****************************************** foursquare widget *********************************************/
+div#foursquare_widget {
+	width: 254px;
+	padding: 2px;
+}
+
+/*************************************** social sharing widget ********************************************/
+div#social_sharing_widget {
+	width: 254px;
+}
+div#social_sharing_widget dt, div#social_sharing_widget dd {
+	float: left;
+}
+div#social_sharing_widget dt {
+	display: block;
+	text-indent: -5000px;
+	width: 48px;
+	height: 48px;
+	margin: 10px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	clear: both;
+}
+div#social_sharing_widget dt.facebook {
+	background-image: url(../media/facebook_icon_48x48.png);	
+}
+div#social_sharing_widget dt.twitter {
+	background-image: url(../media/twitter_icon_48x48.png);	
+}
+div#social_sharing_widget  dd {
+	/* 254 = 10 + 48 + 10 + 176 + 10 */
+	width: 166px;
+	margin: 20px 10px;
+	height: 28px;
+	vertical-align: middle;
+}
+div#social_sharing_widget ul {
+	clear: both;
+	padding: 10px;
+	margin-top: 20px;
+}
+div#social_sharing_widget ul li {
+	padding: 10px 0;
+}
+div#social_sharing_widget h2 {
+	padding: 10px;
+}
